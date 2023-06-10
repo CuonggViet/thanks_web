@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="thank you.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            const body = document.querySelector('body');
+        
+            setInterval(function() {
+                const firework = document.createElement('div');
+                firework.style.left = Math.random() * window.innerWidth + 'px';
+                firework.style.top = Math.random() * window.innerHeight + 'px';
+                firework.classList.add('firework');
+                body.appendChild(firework);
+        
+                setTimeout(function() {
+                    firework.remove();
+                }, 2000);
+            }, 200);
+        };
+        </script>
+        
+    </script>
+</body>
+<body>
+
+    <section class="thank-you">
+        <div class="container">
+            <div class="heading">
+                <h1>Thank You!</h1>
+            </div>
+            <div class="content">
+                <p>I appreciate your time and effort. I have received your message and will get back to you soon.</p>
+                <a class="btn" href="https://vietcuong.netlify.app/">Return Home</a>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
